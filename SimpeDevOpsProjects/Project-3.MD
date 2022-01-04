@@ -30,6 +30,9 @@ MAINTAINER "valaxytech"
 
 # copy war file on to container 
 COPY ./webapp.war /usr/local/tomcat/webapps
+
+#this is to start the tomcat services
+CMD["catalina.sh", "run"]
 ```
 
 5. Login to Jenkins console and add Docker server to execute commands from Jenkins  
