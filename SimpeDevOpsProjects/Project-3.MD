@@ -14,6 +14,9 @@
 useradd dockeradmin
 passwd dockeradmin
 usermod -aG docker dockeradmin
+
+#Change ownership of the dockeradmin
+chown -R dockeradmin:dockeradmin /opt/docker
 ```
 
 4. Write a Docker file under /opt/docker
